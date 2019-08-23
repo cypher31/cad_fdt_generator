@@ -61,17 +61,13 @@ var stage_scene_dict = {
 
 
 #object scene dictionary
-var user_input_trench_entry = preload("res://user_input_trench_entry/user_input_trench_entry.tscn")
 
 var object_scene_dict = {
-	"user_input_trench_entry" : user_input_trench_entry
 	}
 
 #tab scene dictionary
-var tab_trench = preload("res://tab_trench/tab_trench.tscn")
 
 var tab_scene_dictionary = {
-	"tab_trench" : tab_trench
 	}
 
 #music dictionary

@@ -16,11 +16,30 @@ _global_script_class_icons={
 [application]
 
 config/name="cad_fdt_generator"
+run/main_scene="res://main/main.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+utility="*res://utility.gd"
+data_management="*res://data_management/data_management.gd"
+generate_script="*res://generate_script/generate_script.gd"
+
+[display]
+
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
+
+[global]
+
+name=false
+
+[name]
+
+name=false
 
 [rendering]
 
-quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
 vram_compression/import_etc2=false
 environment/default_environment="res://default_env.tres"

@@ -23,76 +23,16 @@ margin_bottom = 213.0
 
 [node name="mc" parent="tab_master/vbox" index="0"]
 margin_right = 974.0
-margin_bottom = 208.0
+margin_bottom = 73.0
 
 [node name="vbox" type="VBoxContainer" parent="tab_master/vbox/mc" index="0"]
 margin_right = 974.0
-margin_bottom = 208.0
+margin_bottom = 73.0
 rect_min_size = Vector2( 974, 0 )
-
-[node name="input_proj_number" parent="tab_master/vbox/mc/vbox" instance=ExtResource( 3 )]
-editor/display_folded = true
-margin_right = 974.0
-
-[node name="input_label" parent="tab_master/vbox/mc/vbox/input_proj_number" index="0"]
-margin_right = 485.0
-size_flags_horizontal = 3
-text = "Project Number"
-
-[node name="user_input" parent="tab_master/vbox/mc/vbox/input_proj_number" index="1"]
-margin_left = 489.0
-margin_right = 974.0
-
-[node name="input_units" parent="tab_master/vbox/mc/vbox/input_proj_number" index="2"]
-visible = false
-margin_left = 244.0
-margin_right = 244.0
-
-[node name="input_proj_name" parent="tab_master/vbox/mc/vbox" instance=ExtResource( 3 )]
-editor/display_folded = true
-margin_top = 29.0
-margin_right = 974.0
-margin_bottom = 54.0
-
-[node name="input_label" parent="tab_master/vbox/mc/vbox/input_proj_name" index="0"]
-margin_right = 485.0
-size_flags_horizontal = 3
-text = "Project Name"
-
-[node name="user_input" parent="tab_master/vbox/mc/vbox/input_proj_name" index="1"]
-margin_left = 489.0
-margin_right = 974.0
-
-[node name="input_units" parent="tab_master/vbox/mc/vbox/input_proj_name" index="2"]
-visible = false
-margin_left = 230.0
-margin_right = 244.0
-
-[node name="input_user_initials" parent="tab_master/vbox/mc/vbox" instance=ExtResource( 3 )]
-editor/display_folded = true
-margin_top = 58.0
-margin_right = 974.0
-margin_bottom = 83.0
-
-[node name="input_label" parent="tab_master/vbox/mc/vbox/input_user_initials" index="0"]
-margin_right = 485.0
-size_flags_horizontal = 3
-text = "User Initials"
-
-[node name="user_input" parent="tab_master/vbox/mc/vbox/input_user_initials" index="1"]
-margin_left = 489.0
-margin_right = 974.0
-
-[node name="input_units" parent="tab_master/vbox/mc/vbox/input_user_initials" index="2"]
-visible = false
-margin_left = 230.0
-margin_right = 244.0
 
 [node name="input_working_directory" parent="tab_master/vbox/mc/vbox" instance=ExtResource( 3 )]
 editor/display_folded = true
-margin_top = 87.0
 margin_right = 974.0
-margin_bottom = 112.0
 
 [node name="input_label" parent="tab_master/vbox/mc/vbox/input_working_directory" index="0"]
 margin_right = 485.0
@@ -108,9 +48,9 @@ editable = false
 visible = false
 
 [node name="button_working_dir" type="Button" parent="tab_master/vbox/mc/vbox"]
-margin_top = 116.0
+margin_top = 29.0
 margin_right = 974.0
-margin_bottom = 136.0
+margin_bottom = 49.0
 text = "Change Working Directory"
 
 [node name="FileDialog" type="FileDialog" parent="tab_master/vbox/mc/vbox/button_working_dir"]
@@ -130,19 +70,13 @@ access = 2
 current_dir = "C:/Users/kelby/dev/software/tools/trench_logger_plus"
 current_path = "C:/Users/kelby/dev/software/tools/trench_logger_plus/"
 
-[node name="button_save_data" type="Button" parent="tab_master/vbox/mc/vbox"]
-margin_top = 140.0
+[node name="button_load_file" type="Button" parent="tab_master/vbox/mc/vbox"]
+margin_top = 53.0
 margin_right = 974.0
-margin_bottom = 160.0
-text = "Save Project"
+margin_bottom = 73.0
+text = "Load File & Make Commands"
 
-[node name="button_load_data" type="Button" parent="tab_master/vbox/mc/vbox"]
-margin_top = 164.0
-margin_right = 974.0
-margin_bottom = 184.0
-text = "Load Project"
-
-[node name="file_search" type="FileDialog" parent="tab_master/vbox/mc/vbox/button_load_data"]
+[node name="file_search" type="FileDialog" parent="tab_master/vbox/mc/vbox/button_load_file"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -160,43 +94,6 @@ show_hidden_files = true
 current_dir = "C:/Users/kelby/dev/software/tools/trench_logger_plus"
 current_path = "C:/Users/kelby/dev/software/tools/trench_logger_plus/"
 
-[node name="button_add_trench" type="Button" parent="tab_master/vbox/mc/vbox"]
-margin_top = 188.0
-margin_right = 974.0
-margin_bottom = 208.0
-text = "Add Trench"
-
-[node name="new_trench_pop" type="ConfirmationDialog" parent="tab_master/vbox/mc/vbox/button_add_trench"]
-editor/display_folded = true
-margin_right = 250.0
-margin_bottom = 86.0
-
-[node name="vbox" type="VBoxContainer" parent="tab_master/vbox/mc/vbox/button_add_trench/new_trench_pop"]
-margin_left = 8.0
-margin_top = 8.0
-margin_right = 242.0
-margin_bottom = 50.0
-
-[node name="Label" type="Label" parent="tab_master/vbox/mc/vbox/button_add_trench/new_trench_pop/vbox"]
-margin_right = 234.0
-margin_bottom = 14.0
-text = "Add new Trench Exploration"
-align = 1
-
-[node name="LineEdit" type="LineEdit" parent="tab_master/vbox/mc/vbox/button_add_trench/new_trench_pop/vbox"]
-margin_top = 18.0
-margin_right = 234.0
-margin_bottom = 42.0
-align = 1
-clear_button_enabled = true
-placeholder_text = "Enter Trench Label (Ex. TP-1)"
-
 [editable path="tab_master"]
-
-[editable path="tab_master/vbox/mc/vbox/input_proj_number"]
-
-[editable path="tab_master/vbox/mc/vbox/input_proj_name"]
-
-[editable path="tab_master/vbox/mc/vbox/input_user_initials"]
 
 [editable path="tab_master/vbox/mc/vbox/input_working_directory"]
